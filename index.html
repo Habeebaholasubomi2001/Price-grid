@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.google.com/specimen/Karla" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 16px;
+        align-items: center;
+        background-color: hsl(204, 43%, 93%);
+        justify-content: center;
+      }
+      .container {
+        max-width: 80%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 100px auto;
+      }
+      .content {
+        display: grid;
+        width: 60%;
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .box-1 {
+        grid-column: 1 / span 2;
+        padding: 25px;
+
+        border-radius: 5px;
+        background-color: white;
+      }
+      h1 {
+        color: hsl(179, 62%, 43%);
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+      h4 {
+        margin-bottom: 15px;
+        color: rgba(255, 255, 255, 0.74);
+      }
+      .box-1 h3 {
+        color: hsl(71, 73%, 54%);
+        margin-bottom: 10px;
+      }
+      .box-1 p {
+        line-height: 1.7;
+        font-size: 15px;
+        color: hsl(218, 22%, 67%);
+      }
+      .box-2 {
+        background-color: hsl(179, 62%, 43%);
+        color: white;
+        padding: 25px;
+      }
+      .price {
+        font-size: 28px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .small {
+        color: hsla(203, 44%, 93%, 0.623);
+        font-size: 10px;
+      }
+      .full {
+        margin-bottom: 20px;
+      }
+      button {
+        width: 100%;
+        background-color: hsl(71, 73%, 54%);
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 7px;
+        border-style: none;
+      }
+      button a {
+        color: white;
+        text-decoration: none;
+      }
+      .box-3 {
+        color: white;
+        padding: 20px;
+        background-color: hsla(179, 62%, 43%, 0.788);
+      }
+      .box-3 p {
+        line-height: 1.5;
+        font-size: 14px;
+        color: hsla(203, 44%, 93%, 0.623);
+      }
+      .ps {
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+      @media (max-width: 375px) {
+        .content {
+          flex-direction: column;
+          display: flex;
+          padding: 5px;
+          width: 100%;
+        }
+        .ps {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="box-1">
+          <h1>Join our community</h1>
+          <h3>30-day, hassle-free money back guarantee</h3>
+          <p>
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
+        <div class="box-2">
+          <h4>Monthly Subscription</h4>
+          <p class="ps">
+            <span class="price">&dollar;29</span>
+            <span class="small">per month</span>
+          </p>
+          <p class="full">Full access for less than &dollar;1 a day</p>
+          <button><a href="#">Sign Up</a></button>
+        </div>
+        <div class="box-3">
+          <h4>Why Us</h4>
+          <p>Tutorials by industry experts</p>
+          <p>Peer &amp; expert code review</p>
+          <p>Coding exercises Access to our GitHub repos</p>
+          <p>Community forum</p>
+          <p>Flashcard decks</p>
+          <p>New videos every week</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Habeebah</a>.
+      </p>
+    </footer>
+  </body>
+</html>
